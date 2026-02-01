@@ -11,11 +11,21 @@ jobs:
     permissions:
       contents: write
 
+    env:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Debug token presence
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "GH_TOKEN is NOT set"
+            exit 1
+          else
+            echo "GH_TOKEN is set"
+          fi
+
       - name: Run GitHub Space Shooter
         uses: czl9707/gh-space-shooter@v1.0.0
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
