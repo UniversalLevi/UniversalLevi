@@ -11,21 +11,27 @@ jobs:
     permissions:
       contents: write
 
-    env:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Debug token presence
-        run: |
-          if [ -z "$GH_TOKEN" ]; then
-            echo "GH_TOKEN is NOT set"
-            exit 1
-          else
-            echo "GH_TOKEN is set"
-          fi
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
-      - name: Run GitHub Space Shooter
-        uses: czl9707/gh-space-shooter@v1.0.0
+      - name: Install gh-space-shooter
+        run: pip install gh-space-shooter
+
+      - name: Run space shooter
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: gh-space-shooter UniversalLevi
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Update GitHub Space Shooter" || echo "No changes"
+          git push
