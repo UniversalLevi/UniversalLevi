@@ -12,7 +12,7 @@
 
 ---
 
-## 👾 GitHub Space Shooter
+## 👾 GitHub Contribution
 <p align="center">
   <img src="./UniversalLevi-gh-space-shooter.gif" />
 </p>
@@ -42,14 +42,12 @@ Experience spans **SOC-style monitoring, server ops, backend development**, and 
 
 | Project | Stack | Description | Live |
 |---------|-------|-------------|------|
-| **AI Calling Agent** | Python | AI-assisted automation of calls & workflows | [Live Demo](#) |
-| **E-CommerceStore** | TypeScript | Backend logic & integrations for e-commerce | [Visit Store](#) |
-| **Shopify Fake Order Automation** | Python | Automates Shopify workflows & testing | [Live Demo](#) |
-| **GitHub Space Shooter** | Python | Fun, interactive GitHub-based space shooter | [Play GIF](./UniversalLevi-gh-space-shooter.gif) |
-| **ELI-Fi** | HTML | Minimalist web project | [Live Site](#) |
-| **green-sip-haven** | TypeScript | Frontend + backend experiments | [Live Demo](#) |
+| **E-CommerceStore** | TypeScript | Backend logic & integrations for e-commerce | [Visit Store](https://eazydropshipping.com/) |
+| **Apsox** | TypeScript | Backend architecture & communication platform | [Visit Project](https://apsox.com/) |
+| **AI Calling Agent** | Python | AI-assisted automation of calls & workflows |       
+| **green-sip-haven** | TypeScript | Frontend + backend experiments |
+| **ELI-Fi** | HTML | Minimalist web project |
 
-> Replace `#` with live URLs if deployed.
 
 ---
 
