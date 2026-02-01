@@ -1,0 +1,13 @@
+name: GitHub Space Shooter
+
+on:
+  schedule:
+    - cron: "0 */24 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitHub Space Shooter
+        uses: czl9707/gh-space-shooter@v1.0.0
