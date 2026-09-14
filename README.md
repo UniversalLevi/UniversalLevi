@@ -1,11 +1,12 @@
 <h1 align="center">Hey, I’m Deepanshu 👋</h1>
 
 <p align="center">
-  <b>3rd-year CS student • Builder • Problem Solver • Occasionally tired 😒</b>
+  <b>Final year CS student • Builder • Problem Solver • Occasionally tired 😒</b>
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/deepanshuchauhan2095">LinkedIn</a> •
+  <a href="https://deepanshuchauhan.vercel.app/">Portfolio</a> •
   <a href="https://discordapp.com/users/745109590051651584">Discord</a> •
   <a href="https://www.reddit.com/u/universal_levi">Reddit</a>
 </p>
